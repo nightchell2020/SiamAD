@@ -9,7 +9,7 @@ import torch.nn as nn
 def train(backbone, module_name):
     """RUNNING TRAIN SCRIPTS
     args:
-        backbone:
+        backbone: choose your backbone
         module_name:
 
     """

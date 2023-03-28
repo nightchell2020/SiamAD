@@ -9,8 +9,9 @@ Collaborative Research of Doosan&CAU
 You have to modify `config.py`to select mode as Auto-Encoder or WDCNN
 ### 1. Environment setup
 This code has been tested on 
-- Window10 Python 3.8.3, Pytorch 1.7.1 (main)
 - Ubuntu 20.04, Python 3.8.3, Pytorch 0.7.0/1.6.0, CUDA 10.2.
+- Window10 Python 3.8.3, Pytorch 1.7.1 (main)
+
 
 Please install related libraries before running this code: 
 ```bash
