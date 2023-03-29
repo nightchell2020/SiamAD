@@ -26,6 +26,7 @@ Download pretrained model: [general_model](https://pan.baidu.com/s/1QeU7OcTqHksZ
 Download testing datasets and put them into `test_dataset` directory. If you want to test the tracker on a new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit) to set test_dataset.
 
 ```bash 
+cd main
 python test.py                                
 	--dataset A                 #dataset_name
 	--snapshot snapshot/general_model.pth  # tracker_name
@@ -45,8 +46,10 @@ Used datasets：
 To train the SiamAD model, run `train.py` with the desired configs:
 
 ```bash
-cd tools
+cd main
 python train.py
+    --train_module AE
+    --train_name autoencoder
 ```
 
 ### 4. Contact

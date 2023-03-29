@@ -5,7 +5,11 @@ import importlib
 import cv2 as cv
 import multiprocessing
 import torch.backends.cudnn
-import settings as st
+from tools import settings as st
+
+env_path = os.path.join(os.path.dirname(__file__), '../..')
+if env_path not in sys.path:
+    sys.path.append(env_path)
 
 def train(train_module, train_name, cudnn_benchmark=True):
     """RUNNING TRAIN SCRIPTS
