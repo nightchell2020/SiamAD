@@ -13,11 +13,12 @@ This code has been tested on
 - Window10 Python 3.8.3, Pytorch 1.7.1 (main)
 
 
-Please install related libraries before running this code: 
+#### Install dependencies
+Run the installation script to install all the dependencies. You need to provide the conda install path (e.g. ~/anaconda3) and the name for the created conda environment (here ```pytracking```).  
 ```bash
-pip install -r requirements.txt
-```
-**Note** Also check your data-path in `config.py` 
+bash install.sh conda_install_path pytracking
+```  
+This script will also download the default networks and set-up the environment.
 
 ### 2. Test & Evaluation
 Download pretrained model: [general_model](https://pan.baidu.com/s/1QeU7OcTqHksZXscBq3skiw)(code: c99t) and put it into `tools/snapshot` directory.

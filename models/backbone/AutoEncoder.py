@@ -58,7 +58,7 @@ class AutoEncoder(nn.Module):
         self.encoder_layer1 = BasicEncoderBlock(in_channel, 1024)
         self.encoder_layer2 = BasicEncoderBlock(1024, 100)
         self.decoder_layer1 = BasicDecoderBlock(100, 1024)
-        self.decoder_layer2 = BasicDecoderBlock(1024, in_channel,kernel_size=3)
+        self.decoder_layer2 = BasicDecoderBlock(1024, in_channel, kernel_size=3)
         # self.classification_layer = ClassificationBlock(in_channel,2)
 
     def forward(self,x):
